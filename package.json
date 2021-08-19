@@ -1,0 +1,17 @@
+{
+  "name": "stage_2_task",
+  "version": "1.0.0",
+  "description": "stage 2 task | frontend developer resume",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "author": "ezenwa chigozie",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.35.1"
+  }
+}
