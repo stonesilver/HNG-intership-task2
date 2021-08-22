@@ -49,7 +49,7 @@ a {
 }
 @media screen and (max-width: 768px) {
   .container {
-    padding: 0 0.25rem;
+    padding: 0 0.5rem;
   }
 }
 .container .navbar {
@@ -226,13 +226,15 @@ a {
 }
 .container .section-contact-grid {
   display: grid;
+  width: 100%;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   margin-top: 1rem;
 }
 @media screen and (max-width: 768px) {
   .container .section-contact-grid {
-    grid-template-columns: auto;
+    display: flex;
+    justify-content: center;
   }
 }
 .container .section-contact-grid-form {
@@ -242,21 +244,26 @@ a {
 }
 @media screen and (max-width: 768px) {
   .container .section-contact-grid-form {
-    width: 100%;
+    width: 90%;
   }
 }
 .container .section-contact-grid-form label,
 .container .section-contact-grid-form .textarea-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   margin-bottom: 1rem;
+  font-size: clamp(0.9rem, 1vw, 1.5rem);
 }
 .container .section-contact-grid-form label input,
 .container .section-contact-grid-form .textarea-container input {
-  width: 100%;
   height: clamp(2.2rem, 3vw, 5.5rem);
   font-size: clamp(0.9rem, 1vw, 1.5rem);
   border: none;
+  padding: 0 0.3rem;
   border-radius: 3px;
   background: gray;
+  outline: none;
 }
 .container .section-contact-grid-form label input::placeholder,
 .container .section-contact-grid-form .textarea-container input::placeholder {
@@ -264,11 +271,11 @@ a {
 }
 .container .section-contact-grid-form label .textarea,
 .container .section-contact-grid-form .textarea-container .textarea {
-  width: 100%;
   font-size: clamp(0.9rem, 1vw, 1.5rem);
   border-radius: 3px;
   background: gray;
-  padding: 0;
+  padding: 0 0.3rem;
+  outline: none;
 }
 .container .section-contact-grid-form label .textarea::placeholder,
 .container .section-contact-grid-form .textarea-container .textarea::placeholder {

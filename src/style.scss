@@ -52,7 +52,7 @@ a {
   overflow: hidden;
 
   @media screen and (max-width: 768px) {
-    padding: 0 0.25rem;
+    padding: 0 0.5rem;
   }
 
   .navbar {
@@ -260,12 +260,14 @@ a {
 
     &-contact-grid {
       display: grid;
+      width: 100%;
       grid-template-columns: repeat(2, 1fr);
       gap: 2rem;
       margin-top: 1rem;
 
       @media screen and (max-width: 768px) {
-        grid-template-columns: auto;
+        display: flex;
+        justify-content: center;
       }
 
       &-form {
@@ -274,20 +276,25 @@ a {
         width: 80%;
 
         @media screen and (max-width: 768px) {
-          width: 100%;
+          width: 90%;
         }
 
         label,
         .textarea-container {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
           margin-bottom: 1rem;
+          font-size: clamp(0.9rem, 1vw, 1.5rem);
 
           input {
-            width: 100%;
             height: clamp(2.2rem, 3vw, 5.5rem);
             font-size: clamp(0.9rem, 1vw, 1.5rem);
             border: none;
+            padding: 0 .3rem;
             border-radius: 3px;
             background: gray;
+            outline: none;
 
             &::placeholder {
               color: $primary-color;
@@ -295,11 +302,11 @@ a {
           }
 
           .textarea {
-            width: 100%;
             font-size: clamp(0.9rem, 1vw, 1.5rem);
             border-radius: 3px;
             background: gray;
-            padding: 0;
+            padding: 0 .3rem;
+            outline: none;
 
             &::placeholder {
               color: $primary-color;
