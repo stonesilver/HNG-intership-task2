@@ -93,15 +93,8 @@ a {
       }
 
       .email {
-        background: -webkit-linear-gradient(
-          45deg,
-          rgb(206, 14, 14),
-          rgb(34, 194, 19),
-          blue
-        );
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
+        
+        color: rgb(86, 6, 151);
       }
     }
   }
@@ -136,12 +129,7 @@ a {
           height: 80%;
           object-fit: cover;
           border-radius: 50%;
-          border: 0.3rem dotted $secondary-color;
-
-          @media screen and (max-width: 768px) {
-            width: 80%;
-            height: 80%;
-          }
+          border: 0.35rem dotted $secondary-color;
         }
       }
 
@@ -228,6 +216,7 @@ a {
 
         &-logo {
           font-size: clamp(3rem, 4.5vw, 5rem);
+          margin-bottom: 0.5rem;
         }
 
         &-body {
@@ -276,7 +265,7 @@ a {
         width: 80%;
 
         @media screen and (max-width: 768px) {
-          width: 90%;
+          width: 98%;
         }
 
         label,
@@ -293,7 +282,7 @@ a {
             border: none;
             padding: 0 .3rem;
             border-radius: 3px;
-            background: gray;
+            background: #d8d5d5;
             outline: none;
 
             &::placeholder {
@@ -304,7 +293,7 @@ a {
           .textarea {
             font-size: clamp(0.9rem, 1vw, 1.5rem);
             border-radius: 3px;
-            background: gray;
+            background: #d8d5d5;
             padding: 0 .3rem;
             outline: none;
 
@@ -318,10 +307,10 @@ a {
           width: max-content;
           outline: none;
           border: none;
-          padding: clamp(1.1rem, 1.5vw, 2.5rem);
-          font-size: clamp(1rem, 1.2vw, 1.5rem);
+          padding: clamp(0.85rem, 1.5vw, 2.5rem);
+          font-size: clamp(0.95rem, 1.2vw, 1.5rem);
           font-weight: 600;
-          border-radius: 10px;
+          border-radius: 5px;
           background: $secondary-color;
           cursor: pointer;
         }
@@ -400,9 +389,9 @@ a {
             .fa-envelope {
               background: -webkit-linear-gradient(
                 45deg,
-                rgb(206, 14, 14),
-                rgb(34, 194, 19),
-                blue
+                #ce0e0e,
+                #22c213,
+                #0000ff
               );
               -webkit-background-clip: text;
               background-clip: text;

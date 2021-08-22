@@ -84,10 +84,7 @@ a {
   color: green;
 }
 .container .navbar-socials .email {
-  background: -webkit-linear-gradient(45deg, #ce0e0e, #22c213, blue);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #560697;
 }
 .container .section {
   margin-top: clamp(2.2rem, 3.5vw, 3.5rem);
@@ -121,13 +118,7 @@ a {
   height: 80%;
   object-fit: cover;
   border-radius: 50%;
-  border: 0.3rem dotted #6889eb;
-}
-@media screen and (max-width: 768px) {
-  .container .section .intro-grid-left img {
-    width: 80%;
-    height: 80%;
-  }
+  border: 0.35rem dotted #6889eb;
 }
 .container .section .intro-grid-right {
   text-align: center;
@@ -203,6 +194,7 @@ a {
 }
 .container .section-skills-grid-card-logo {
   font-size: clamp(3rem, 4.5vw, 5rem);
+  margin-bottom: 0.5rem;
 }
 .container .section-skills-grid-card-body {
   font-size: clamp(0.8rem, 1.1vw, 1.5rem);
@@ -244,7 +236,7 @@ a {
 }
 @media screen and (max-width: 768px) {
   .container .section-contact-grid-form {
-    width: 90%;
+    width: 98%;
   }
 }
 .container .section-contact-grid-form label,
@@ -262,7 +254,7 @@ a {
   border: none;
   padding: 0 0.3rem;
   border-radius: 3px;
-  background: gray;
+  background: #d8d5d5;
   outline: none;
 }
 .container .section-contact-grid-form label input::placeholder,
@@ -273,7 +265,7 @@ a {
 .container .section-contact-grid-form .textarea-container .textarea {
   font-size: clamp(0.9rem, 1vw, 1.5rem);
   border-radius: 3px;
-  background: gray;
+  background: #d8d5d5;
   padding: 0 0.3rem;
   outline: none;
 }
@@ -285,10 +277,10 @@ a {
   width: max-content;
   outline: none;
   border: none;
-  padding: clamp(1.1rem, 1.5vw, 2.5rem);
-  font-size: clamp(1rem, 1.2vw, 1.5rem);
+  padding: clamp(0.85rem, 1.5vw, 2.5rem);
+  font-size: clamp(0.95rem, 1.2vw, 1.5rem);
   font-weight: 600;
-  border-radius: 10px;
+  border-radius: 5px;
   background: #6889eb;
   cursor: pointer;
 }
@@ -353,7 +345,7 @@ a {
   color: green;
 }
 .container .footer-connect-container-socials-link .fa-envelope {
-  background: -webkit-linear-gradient(45deg, #ce0e0e, #22c213, blue);
+  background: -webkit-linear-gradient(45deg, #ce0e0e, #22c213, #0000ff);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
