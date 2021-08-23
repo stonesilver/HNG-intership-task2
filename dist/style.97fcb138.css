@@ -208,11 +208,6 @@ a {
   margin-top: 1rem;
   padding-bottom: 0.5rem;
 }
-@media screen {
-  .container .section-services-grid {
-    padding: 1rem;
-  }
-}
 .container .section-services-grid-card {
   display: flex;
   flex-direction: column;
