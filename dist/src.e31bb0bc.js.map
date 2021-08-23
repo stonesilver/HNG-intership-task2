@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"src.e31bb0bc.js","sourceRoot":"..\\src","sourcesContent":[]}
+{"version":3,"sources":["index.js"],"names":["handleSubmit","e","preventDefault","alert"],"mappings":"AAAA,IAAMA,YAAY,GAAG,SAAfA,YAAe,CAACC,CAAD,EAAO;AAC1BA,EAAAA,CAAC,CAACC,cAAF;AACAC,EAAAA,KAAK,CAAC,mBAAD,CAAL;AACD,CAHD","file":"src.e31bb0bc.js","sourceRoot":"..\\src","sourcesContent":["const handleSubmit = (e) => {\r\n  e.preventDefault();\r\n  alert('Hello!!!!!!!!!!!!');\r\n};\r\n"]}

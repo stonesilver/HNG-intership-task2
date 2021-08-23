@@ -190,7 +190,7 @@ a {
   margin-right: 1rem;
   padding: 0.5rem 1rem;
   border-bottom-right-radius: 1.2rem;
-  box-shadow: 2px 1px 2px #6889eb;
+  box-shadow: 0px 1px 1px #6889eb;
 }
 .container .section-skills-grid-card-logo {
   font-size: clamp(3rem, 4.5vw, 5rem);
@@ -198,6 +198,52 @@ a {
 }
 .container .section-skills-grid-card-body {
   font-size: clamp(0.8rem, 1.1vw, 1.5rem);
+}
+.container .section-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: calc(1rem + 1vw);
+  flex-wrap: nowrap;
+  overflow: auto;
+  margin-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+@media screen {
+  .container .section-services-grid {
+    padding: 1rem;
+  }
+}
+.container .section-services-grid-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #6889eb;
+  border-bottom-left-radius: 1.2rem;
+}
+.container .section-services-grid-card-logo {
+  width: 100%;
+}
+.container .section-services-grid-card-logo img {
+  width: 100%;
+  height: calc(30vh + 4rem);
+  object-fit: cover;
+}
+.container .section-services-grid-card-body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0.1rem;
+}
+.container .section-services-grid-card-body-title {
+  font-size: clamp(1.1rem, 1.5vw, 1.8rem);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.container .section-services-grid-card-body-text {
+  font-family: "Klee One", cursive;
+  font-size: clamp(0.8rem, 1vw, 1.5rem);
+  padding: 0 0.5rem;
 }
 .container .section-official-partners-grid {
   width: 100%;
@@ -245,7 +291,7 @@ a {
   flex-direction: column;
   width: 100%;
   margin-bottom: 1rem;
-  font-size: clamp(0.9rem, 1vw, 1.5rem);
+  font-size: clamp(0.75rem, 1vw, 1.5rem);
 }
 .container .section-contact-grid-form label input,
 .container .section-contact-grid-form .textarea-container input {

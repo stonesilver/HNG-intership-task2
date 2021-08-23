@@ -20,6 +20,7 @@
       href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&display=swap" rel="stylesheet">
     <script
       src="https://kit.fontawesome.com/04cf745c3d.js"
       crossorigin="anonymous"
@@ -178,6 +179,39 @@
         </div>
       </section>
       <section class="section">
+        <header class="section-header">Services</header>
+        <div class="section-services-grid">
+          <div class="section-services-grid-card">
+            <div class="section-services-grid-card-logo">
+              <img src="./public/web_dev_image.jpg" alt="">
+            </div>
+            <div class="section-services-grid-card-body">
+              <p class="section-services-grid-card-body-title">Software Development</p>
+              <p class="section-services-grid-card-body-text">The use of various programming languages, frameworks, and design tools and create user-facing functionality. I am tech-savvy and creative, and can successfully work with both designers and back-end developers.</p>
+            </div>
+          </div>
+          <div class="section-services-grid-card">
+            <div class="section-services-grid-card-logo">
+              <img src="./public/web_opt_image.jpg" alt="">
+            </div>
+            <div class="section-services-grid-card-body">
+              <p class="section-services-grid-card-body-title">Website Optimization</p>
+              <p class="section-services-grid-card-body-text">Web site optimization produces highly competitive web sites that out-perform on every measure; traffic, speed, conversion rates, sell-throughs, and, most importantly, return on your investment. Boost the download speed of your web pages and accelerate backend systems to retain your visitors and increase usability.</p>
+            </div>
+          </div>
+          <div class="section-services-grid-card">
+            <div class="section-services-grid-card-logo">
+              <img src="./public/mentoring.jpg" alt="">
+            </div>
+            <div class="section-services-grid-card-body">
+              <p class="section-services-grid-card-body-title">Mentoring</p>
+              <p class="section-services-grid-card-body-text">Coding mentors are some of the most valuable people out there. I will help you look through your code, suggest helpful resources, and give you certainty you're heading in the right direction.</p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
         <header class="section-header">Official Partners</header>
         <div class="section-official-partners-grid">
           <div class="section-official-partners-grid-card">
@@ -215,7 +249,7 @@
       <section class="section">
         <header class="section-header">Contact Me</header>
         <div class="section-contact-grid">
-          <form class="section-contact-grid-form">
+          <form class="section-contact-grid-form" onsubmit="return false">
             <label for="name">Name
               <input 
                 type="text" 
@@ -237,7 +271,7 @@
                 cols="30"
                 rows="12"
                 class="textarea"
-              />
+              ></textarea>
             </div>
             <button type="submit" class="btn">Submit</button>
           </form>
@@ -300,6 +334,6 @@
         </div>
       </footer>
     </main>
-    <script src="index.js"></script>
+    <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
