@@ -417,11 +417,14 @@ a {
         }
 
         &-socials {
+          display: flex;
+          justify-content: center;
+          align-items: center;
           margin-top: 0.5rem;
 
           &-link {
             font-size: clamp(1.5rem, 3vw, 4.5rem);
-            margin-right: 2.5rem;
+            margin: 0 1.25rem;
 
             .fa-globe {
               color: $secondary-color;
