@@ -147,7 +147,7 @@ a {
 }
 .container .section .intro-grid-right-tagline {
   margin-top: 40px;
-  text-align: left;
+  text-align: justify;
   padding: 0;
   opacity: 0.5;
   font-size: clamp(0.8rem, 0.9rem, 1rem);
